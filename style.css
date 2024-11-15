@@ -1,0 +1,224 @@
+*{
+    margin:0;
+    padding :0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height :100%;
+    width : 100%;
+}
+
+nav{
+    width :100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding :2vh 3vh;
+    font-size: 3vh;
+    height : 6%;
+    position:fixed;
+    top :0;
+    background-color: aliceblue;
+}
+nav img{
+    height :4.5vh;
+}
+
+.page1{
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    background-color: rgb(47, 46, 46);
+    padding :2vw;
+}
+
+.page1 main{
+    width : 60vh;
+    height : 95%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding : 2vh;
+    border-radius: 1.5vh;
+}
+
+.page1 main .keys button{
+     height :8vh;
+     width : 10vh;
+     font-size : 3vh;
+     border-radius: 25px;
+     margin : 1vh;
+     background-color: rgb(43, 43, 43);
+     color : white;
+     border: none;
+}
+
+.page1 main .keys .special-key button{
+      font-size : 2vh;
+      height : 4vh;
+      width : 8vh;
+      background-color: transparent;
+}
+.page1 main .keys .special-key button:last-child{
+    background-color: rgb(53, 52, 52);
+    width : 6vh;
+}
+
+
+.page1 main .keys button:active{
+    background-color: grey;
+}
+
+.page1 main .keys  .spcl ,.row1{
+    color : blue;
+}
+ .page1 main .sif-cal{
+    width:100%;
+    display: flex;
+    padding :0 3vh;
+    border-bottom : 1px solid grey;
+    
+ }
+ .page1 main .sif-cal button{
+    height :5vh;
+    width : 10vh;
+    font-size : 3vh;
+    border-radius: 25px;
+    margin : 0.5vh;
+    border : none;
+    background-color: transparent;
+    color : white;
+ }
+
+ .page1 main .keys .row5 button:last-child{
+    background-color: blue;
+    color : white;
+ }
+
+ .page1 .content2{
+    width : 40%;
+    height : 95%;
+    background-color: rgb(253, 250, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    padding : 2vw;
+    border :1px solid black;
+    border-radius: 1.5vh;
+ }
+
+ .page1 .content2 h1{
+     font-size : 3.5vw;
+ }
+
+ .page1 .content2 input{
+    width : 100%;
+    height : 2.5vw;
+    padding :0 1vw; 
+    border-radius: 1vh; 
+    margin:0.5vw 0;
+    
+ }
+
+ .page1 .content2 .container{
+    margin : 0.5vw auto;
+ }
+ .page1 .content2 .year-button button{
+    height : 4vw;
+    width : 5vw;
+    margin : 1vw;
+    font-size: 1.3vw;
+    border-radius: 1vh;
+    border: none;
+    background-color: blueviolet;
+ }
+
+ .page1 .content2 .container .interest-btn button{
+    padding :1vw 3.5vw;
+    font-size:1vw;
+    border-radius: 1vh;
+    border: none;
+    background-color: blueviolet;
+    margin : 1vw;
+}
+.page1 .content2 .calculate-btn{
+    font-size: 1.2vw;
+    width : 60%;
+    padding : 0.5vw 1vw;
+    margin-left : 5vw;
+    border-radius : 2vh;
+    background-color: blueviolet;
+}
+.page1 .content2 button:hover{
+    background-color: rgb(104, 34, 169);
+}
+
+
+
+/*************************************************************************************/
+
+
+
+
+ @media(max-width : 600px){
+    .page1{
+        padding :0;
+        flex-direction: column;
+        height : 200%;
+    }
+    .page1 main {
+        width : 100%;
+        height : 100%;
+    }
+    .page1 main .sif-cal{
+        padding : 0 7vw;
+    }
+    .page1 main .keys button {
+        width : 17vw;
+        margin : 1.5vw;
+        height : 12vw;
+    }
+
+    .page1 .content2{
+        width : 100%;
+        height : 100%;
+        padding : 4vw 2vw;
+    }
+    .page1 .content2 h1{
+        font-size: 12vw;
+       text-align: center;
+    }
+    .page1 .content2 input{
+        height : 7vw;
+    }
+
+    .page1 .content2 .container{
+        margin : 4vw;
+    }
+
+    .page1 .content2 .year-button button{
+        height : 8vw;
+        width : 10vw;
+        font-size: 3vw;
+    }
+    .page1 main .keys .special-key button{
+        width :13vw;
+    }
+
+    .page1 .content2 .container .interest-btn button{
+        font-size: 3vw;
+        height : 8vw;
+        padding : 2vw 5vw;
+    }
+    .page1 .content2 .calculate-btn{
+        font-size: 3.2vw;
+        height : 6vw;
+        margin-left :15vw;
+        
+    }
+
+ }
+
